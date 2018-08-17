@@ -1,4 +1,4 @@
-class rand < Formula
+class Rand < Formula
     desc "Randomizer cli"
     homepage "https://github.com/chonla/rand"
     url "https://github.com/chonla/rand/archive/0.1.0.tar.gz"
