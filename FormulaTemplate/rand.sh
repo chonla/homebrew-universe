@@ -6,7 +6,8 @@ VERSION=$1
 URL="https://github.com/chonla/rand/archive/${VERSION}.tar.gz"
 CHECKSUM=$(curl -sL ${URL} | shasum -a 256 | awk '{print $1;}')
 
-tmpl="class Rand < Formula
+tmpl="# ${VERSION}
+class Rand < Formula
     desc \"Randomizer cli\"
     homepage \"https://github.com/chonla/rand\"
     url \"${URL}\"

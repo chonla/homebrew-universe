@@ -6,7 +6,8 @@ VERSION=$1
 URL="https://github.com/chonla/cotton/archive/${VERSION}.tar.gz"
 CHECKSUM=$(curl -sL ${URL} | shasum -a 256 | awk '{print $1;}')
 
-tmpl="class Cotton < Formula
+tmpl="# ${VERSION}
+class Cotton < Formula
     desc \"Markdown Test Specification Runner\"
     homepage \"https://github.com/chonla/cotton\"
     url \"${URL}\"

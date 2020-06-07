@@ -1,3 +1,4 @@
+# 0.1.1
 class Rand < Formula
     desc "Randomizer cli"
     homepage "https://github.com/chonla/rand"
