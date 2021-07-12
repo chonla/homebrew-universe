@@ -2,8 +2,8 @@
 class Cotton < Formula
     desc "Markdown Test Specification Runner"
     homepage "https://github.com/chonla/cotton"
-    url "https://github.com/chonla/cotton/archive/0.4.0.tar.gz"
-    sha256 "975d834abbd051ed42ca88357899ceef2e0bf53bf9dacd81fd834ffcadc9739d"
+    url "https://github.com/chonla/cotton/archive/0.5.0.tar.gz"
+    sha256 "c68c837a40c29e32ed939e5e34e157842c51115cb2851b6ce7c370d319d77f54"
     depends_on "go" => :build
 
     def install
