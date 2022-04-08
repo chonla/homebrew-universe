@@ -2,8 +2,8 @@
 class Rand < Formula
     desc "Randomizer cli"
     homepage "https://github.com/chonla/rand"
-    url "https://github.com/chonla/rand/archive/0.1.1.tar.gz"
-    sha256 "0d09bb5c3bf25b9a7ec5f7f60b45238c6737c893fada4ca88f1e7b425ffeac95"
+    url "https://github.com/chonla/rand/archive/v0.2.1.tar.gz"
+    sha256 "7e4fb562c6942f754afbb9ee1d1a04a46f90389ae3c3f80848093a2883d4f083"
     depends_on "go" => :build
 
     def install
