@@ -12,12 +12,19 @@ class Helloworld < Formula
             sha256 "7441c24b076d40a3735643371c0e6422fa78542d78fd962ff738e45470d53b6c"
         end
     end
-
-    def install
-        bin.install "/tmp/.gobuild/bin/cotton" => "cotton"
+    on_linux do
+      on_intel do
+        url "https://github.com/chonla/helloworld/releases/download/#{version}/helloworld-#{version}-linux-amd64.tar.gz"
+        sha256 "5ddfaac0fea716013604d6a89619d3567b407664e3f20ff29af9c9098f5797fc"
+      end
     end
-
+  
+    def install
+        bin.install "helloworld" => "helloworld"
+    end
+  
     test do
         system "#{bin}/helloworld"
     end
-end
+  end
+  
