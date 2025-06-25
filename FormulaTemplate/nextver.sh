@@ -45,6 +45,12 @@ else
     exit 1
 fi
 
+if verify_release "${VERSION}" "linux" "arm64"; then
+    LINUX_ARM64_URL=${url}
+    LINUX_ARM64_CHECKSUM=${file_checksum}
+else
+    exit 1
+fi
 
 if verify_release "${VERSION}" "linux" "amd64"; then
     LINUX_AMD64_URL=${url}
@@ -69,6 +75,10 @@ class Nextver < Formula
         end
     end
     on_linux do
+        on_arm do
+            url \"${LINUX_ARM64_URL}\"
+            sha256 \"${LINUX_ARM64_CHECKSUM}\"
+        end
         on_intel do
             url \"${LINUX_AMD64_URL}\"
             sha256 \"${LINUX_AMD64_CHECKSUM}\"

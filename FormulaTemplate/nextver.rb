@@ -13,6 +13,10 @@ class Nextver < Formula
         end
     end
     on_linux do
+        on_arm do
+            url "https://github.com/chonla/nextver/releases/download/v1.0.0/nextver-v1.0.0-linux-arm64.tar.gz"
+            sha256 "0fd4fa07397a04c86f6524116a56115cab0f2ce07c0e4254085c8d6349084634"
+        end
         on_intel do
             url "https://github.com/chonla/nextver/releases/download/v1.0.0/nextver-v1.0.0-linux-amd64.tar.gz"
             sha256 "9e601b65611ba6f20729e2b2ab5a6f15c8df27e947b98c42b9a3e6f2c9568a7d"
